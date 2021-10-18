@@ -21,26 +21,26 @@
       <div class="container header-container">
         <!-- Главная навигация -->
         <nav class="site-nav">
-          <a class="logo" href="index.html" lang="en">Web<span class="logo-header-black">Studio</span></a>
+          <a class="logo" href="index.html" lang="en">Web<span class="logo--black">Studio</span></a>
           <ul class="main-nav">
-            <li class="item"><a href="index.html" class="link">Студия</a></li>
-            <li class="item"><a href="portfolio.html" class="link current">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Студия</a></li>
+            <li class="main-nav__item"><a href="portfolio.html" class="main-nav__link main-nav__link--current">Портфолио</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
           </ul>
         </nav>
         <!-- Контакты -->
         <ul class="contacts-nav">
-          <li class="item">
-            <a class="link mailto" href="mailto:info@devstudio.com">
-              <svg class="mailto-icon">
+          <li class="contacts-nav__item">
+            <a class="contacts-nav__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-nav__icon" width="16" height="12">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="link tel" href="tel:+380961111111">
-              <svg class="tel-icon">
+          <li class="contacts-nav__item">
+            <a class="contacts-nav__link" href="tel:+380961111111">
+              <svg class="contacts-nav__icon" width="10" height="16">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -55,158 +55,158 @@
     <section class="section">
       <div class="container">
         <!-- Скрыть этот заголовок с помощью css -->
-        <h1 class="section-title hiden">Портфолио</h1>
+        <h1 class="section__title section__title--hiden">Портфолио</h1>
         <!-- Фильтр кнопки -->
         <div class="filter-list">
-          <button class="filter-btn btn current" type="button">Все</button>
-          <button class="filter-btn btn" type="button">Веб-сайты</button>
-          <button class="filter-btn btn" type="button">Приложения</button>
-          <button class="filter-btn btn" type="button">Дизайн</button>
-          <button class="filter-btn btn" type="button">Маркетинг</button>
+          <button class="btn btn--filter btn--current" type="button">Все</button>
+          <button class="btn btn--filter" type="button">Веб-сайты</button>
+          <button class="btn btn--filter" type="button">Приложения</button>
+          <button class="btn btn--filter" type="button">Дизайн</button>
+          <button class="btn btn--filter" type="button">Маркетинг</button>
         </div>
         <!-- Проекты -->
-        <ul class="projects">
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <img class="projects-photo" src="./images/img1.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+        <ul class="card-set">
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.
                   </p>
+                  <img class="thumb__image" src="./images/img1.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">Технокряк</h2>
-                  <p class="card-filter">Веб-сайт</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                  <img class="projects-photo" src="./images/img2.jpg" alt="Дизайн постера" width="370" height="294">
-                </div>
-                <div class="card-content">
-              <h2 class="card-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-              <p class="card-filter">Дизайн</p>
+                <div class="product__meta">
+                  <h2 class="product__name">Технокряк</h2>
+                  <p class="product__filter">Веб-сайт</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img3.jpg" alt="Приложение для ресторана" width="370" height="294">
+                  <img class="thumb__image" src="./images/img2.jpg" alt="Дизайн постера" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="card-filter">Приложение</p>
+                <div class="product__meta">
+              <h2 class="product__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+              <p class="product__filter">Дизайн</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img4.jpg" alt="Продвижение проекта" width="370" height="294">
+                  <img class="thumb__image" src="./images/img3.jpg" alt="Приложение для ресторана" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">Проект <span lang="en">Prime</span></h2>
-                  <p class="card-filter">Маркетинг</p>
+                <div class="product__meta">
+                  <h2 class="product__name">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="product__filter">Приложение</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img5.jpg" alt="Разработка приложения" width="370" height="294">
+                  <img class="thumb__image" src="./images/img4.jpg" alt="Продвижение проекта" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">Проект <span lang="en">Boxes</span></h2>
-                  <p class="card-filter">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__name">Проект <span lang="en">Prime</span></h2>
+                  <p class="product__filter">Маркетинг</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img6.jpg" alt="Разработка веб-сайта" width="370" height="294">
+                  <img class="thumb__image" src="./images/img5.jpg" alt="Разработка приложения" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title" lang="en">Inspiration has no Borders</h2>
-                  <p class="card-filter">Веб-сайт</p>
+                <div class="product__meta">
+                  <h2 class="product__name">Проект <span lang="en">Boxes</span></h2>
+                  <p class="product__filter">Приложение</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img7.jpg" alt="Дизайн журнала" width="370" height="294">
+                  <img class="thumb__image" src="./images/img6.jpg" alt="Разработка веб-сайта" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="card-filter">Дизайн</p>
+                <div class="product__meta">
+                  <h2 class="product__name" lang="en">Inspiration has no Borders</h2>
+                  <p class="product__filter">Веб-сайт</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img8.jpg" alt="Продвижение проекта" width="370" height="294">
+                  <img class="thumb__image" src="./images/img7.jpg" alt="Дизайн журнала" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">Проект <span lang="en">LAB</span></h2>
-                  <p class="card-filter">Маркетинг</p>
+                <div class="product__meta">
+                  <h2 class="product__name">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="product__filter">Дизайн</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="item">
-            <article class="card">
-              <a class="card-link" href="">
-                <div class="card-thumb">
-                  <p class="card-thumb-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  <img class="projects-photo" src="./images/img9.jpg" alt="Разработка приложения" width="370" height="294">
+                  <img class="thumb__image" src="./images/img8.jpg" alt="Продвижение проекта" width="370" height="294">
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title" lang="en">Growing Business</h2>
-                  <p class="card-filter">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__name">Проект <span lang="en">LAB</span></h2>
+                  <p class="product__filter">Маркетинг</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="card-set__item">
+            <article class="product">
+              <a class="product__link" href="">
+                <div class="thumb">
+                  <p class="thumb__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                  <img class="thumb__image" src="./images/img9.jpg" alt="Разработка приложения" width="370" height="294">
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name" lang="en">Growing Business</h2>
+                  <p class="product__filter">Приложение</p>
                 </div>
               </a>
             </article>
@@ -219,7 +219,7 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-left">
-        <a class="logo logo-footer" href="index.html" lang="en">Web<span class="logo-footer-white">Studio</span></a>
+        <a class="logo" href="index.html" lang="en">Web<span class="logo--white">Studio</span></a>
         <address>
           <ul class="contacts-footer">
             <li><a class="link"
@@ -265,11 +265,11 @@
       <form class="form-footer">
         <div class="form-field">
           <div>
-            <label class="form-title" for="footer-mail">Подпишитесь на рассылку</label>
-            <input class="form-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+            <label class="form-field__title" for="footer-mail">Подпишитесь на рассылку</label>
+            <input class="form-field__input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
           </div>
-          <button class="form-btn" type="submit">Подписаться
-            <svg class="form-icon">
+          <button class="btn--form" type="submit">Подписаться
+            <svg class="btn__icon">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
           </button>

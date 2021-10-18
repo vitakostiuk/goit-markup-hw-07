@@ -21,26 +21,26 @@
       <div class="container header-container">
         <!-- Главная навигация -->
         <nav class="site-nav">
-            <a class="logo" href="index.html" lang="en">Web<span class="logo-header-black">Studio</span></a>
+            <a class="logo" href="index.html" lang="en">Web<span class="logo--black">Studio</span></a>
           <ul class="main-nav">
-            <li class="item"><a href="index.html" class="link current">Студия</a></li>
-            <li class="item"><a href="portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link main-nav__link--current">Студия</a></li>
+            <li class="main-nav__item"><a href="portfolio.html" class="main-nav__link">Портфолио</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
           </ul>
         </nav>
         <!-- Контакты -->
         <ul class="contacts-nav">
-          <li class="item">
-            <a class="link mailto" href="mailto:info@devstudio.com">
-              <svg class="mailto-icon">
+          <li class="contacts-nav__item">
+            <a class="contacts-nav__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-nav__icon" width="16" height="12">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="link tel" href="tel:+380961111111">
-              <svg class="tel-icon">
+          <li class="contacts-nav__item">
+            <a class="contacts-nav__link" href="tel:+380961111111">
+              <svg class="contacts-nav__icon" width="10" height="16">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -54,13 +54,13 @@
       <!-- Блок герой -->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
+        <button class="btn btn--hero" type="button" data-modal-open>Заказать услугу</button>
       </section>
       <!-- Наши преимущества -->
       <section class="section">
         <div class="container">
           <!-- Скрыть этот заголовок с помощью css -->
-          <h2 class="section-title hiden">Наши преимущества</h2>
+          <h2 class="section__title section__title--hiden">Наши преимущества</h2>
           <ul class="feature-list">
             <li class="item">
               <div class="icon-background">
@@ -104,7 +104,7 @@
           <!-- Чем мы занимаемся -->
           <section class="section no-padding-top">
             <div class="container">
-              <h2 class="section-title">Чем мы занимаемся</h2>
+              <h2 class="section__title">Чем мы занимаемся</h2>
               <ul class="gallery-list">
                 <li class="item">
                   <img src="./images/website.jpg" alt="Десктопные приложения" width="370" />
@@ -124,7 +124,7 @@
           <!-- Наша команда -->
           <section class="section team">
             <div class="container">
-              <h2 class="section-title">Наша команда</h2>
+              <h2 class="section__title">Наша команда</h2>
               <ul class="team-list">
                 <li class="item">
                   <img class="photo" src="./images/product-designer.jpg" alt="Product Designer" width="270">
@@ -280,7 +280,7 @@
           <!-- Постоянные клиенты -->
           <section class="section">
             <div class="container">
-              <h2 class="section-title">Постоянные клиенты</h2>
+              <h2 class="section__title">Постоянные клиенты</h2>
               <ul class="clients-list">
                 <li class="item">
                   <a class="link" href="">
@@ -332,7 +332,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left">
-          <a class="logo logo-footer" href="index.html" lang="en">Web<span class="logo-footer-white">Studio</span></a>
+          <a class="logo" href="index.html" lang="en">Web<span class="logo--white">Studio</span></a>
           <address>
             <ul class="contacts-footer">
               <li><a class="link" 
@@ -378,11 +378,11 @@
         <form class="form-footer">
           <div class="form-field">
             <div>
-              <label class="form-title" for="footer-mail">Подпишитесь на рассылку</label>
-              <input class="form-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+              <label class="form-field__title" for="footer-mail">Подпишитесь на рассылку</label>
+              <input class="form-field__input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
             </div>
-            <button class="form-btn" type="submit">Подписаться
-              <svg class="form-icon">
+            <button class="btn btn--form" type="submit">Подписаться
+              <svg class="btn__icon">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -390,58 +390,58 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
-        <p class="modal-title">
-          Оставьте свои данные, мы вам перезвоним
-        </p>
-        <form class="form-modal">
-          <div class="wrap-name">
-            <label class="form-modal-title" for="name">Имя</label>
-            <input class="form-modal-input" type="text" name="name" id="name">
-              <svg class="form-modal-icon" >
-                <use href="./images/sprite.svg#person-black"></use>
-              </svg>
-          </div>
-
-          <div class="wrap-tel">
-            <label class="form-modal-title" for="tel">Телефон</label>
-            <input class="form-modal-input" type="tel" name="tel" id="tel">
-              <svg class="form-modal-icon">
-                <use href="./images/sprite.svg#phone-black"></use>
-              </svg>
-          </div>
-
-          <div class="wrap-mail">
-            <label class="form-modal-title" for="modal-mail">Почта</label>
-            <input class="form-modal-input" type="email" name="mail" id="modal-mail">
-              <svg class="form-modal-icon">
-                <use href="./images/sprite.svg#email-black"></use>
-              </svg>
-          </div>
-
-          <div>
-            <label class="form-modal-title" for="comment">Комментарий</label>
-            <textarea class="form-modal-input form-modal-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
-          </div>
-
-          <label class="checkbox">
-            <input class="checkbox-input" type="checkbox" name="agreement" value="agreement">
-              <svg class="checkbox-icon">
-                <use href="./images/sprite.svg#border"></use>
-              </svg>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="link" href="">Условия договора
-              </a>
-          </label>
-
-          <button class="form-btn form-modal-btn" type="submit">Отправить</button>
-        </form>
-        <button class="modal-btn" type="button" data-modal-close>
-          <svg class="modal-icon">
+        <button class="modal__btn" type="button" data-modal-close>
+          <svg class="modal__icon">
             <use href="./images/sprite.svg#close-icon"></use>
           </svg>
         </button>
+        <p class="modal__title">
+          Оставьте свои данные, мы вам перезвоним
+        </p>
+        <form class="form-modal">
+            <label class="form-modal__title" for="name">Имя</label>
+              <span class="wrap-input">
+                <input class="form-modal__input" type="text" name="name" id="name">
+                  <svg class="form-modal__icon" >
+                    <use href="./images/sprite.svg#person-black"></use>
+                  </svg>
+             </span>
+
+            <label class="form-modal__title" for="tel">Телефон</label>
+              <span class="wrap-input">
+                <input class="form-modal__input" type="tel" name="tel" id="tel">
+                  <svg class="form-modal__icon">
+                   <use href="./images/sprite.svg#phone-black"></use>
+                 </svg>
+              </span>
+
+            <label class="form-modal__title" for="modal-mail">Почта</label>
+             <span class="wrap-input">
+               <input class="form-modal__input" type="email" name="mail" id="modal-mail">
+                 <svg class="form-modal__icon">
+                    <use href="./images/sprite.svg#email-black"></use>
+                 </svg>
+             </span>
+
+          <div>
+            <label class="form-modal__title" for="comment">Комментарий</label>
+            <textarea class="form-modal__input form-modal__input--comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input class="checkbox__input checkbox__input--hidden" type="checkbox" name="agreement" value="agreement">
+              <svg class="checkbox__icon">
+                <use href="./images/sprite.svg#border"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox__link" href="">Условия договора
+              </a>
+          </label>
+
+          <button class="btn btn--form btn--form-center" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
